@@ -26,7 +26,7 @@ module RailsSameSiteCookie
             end
 
             unless cookie =~ /;\s*samesite=/i
-              cookie << '; SameSite=None'
+              cookie << '; SameSite=Lax'
             end
 
           end
